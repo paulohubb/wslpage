@@ -1,9 +1,10 @@
-
+import  styled  from "styled-components";
 import { useState } from 'react';
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
 import Rodape from './componentes/Rodape';
+import Global from './Styles/global';
 
 
 
@@ -32,6 +33,7 @@ function App() {
   }
   return (
     <div className="App">
+      <Global />
       <Banner />
       <Formulario aoNovoColaborador ={colaborador => novoColaborador (colaborador)}/>
 
